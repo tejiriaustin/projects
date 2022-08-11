@@ -1,25 +1,28 @@
-:root {
-  --text: #e5e5e5;
-  --accent: #1688f0;
-  --bg-main: #fff;
-  --bg-repo: #0f0f1a;
-  --bg-user: #0a0a0f;
-}
-
 * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
   box-sizing: border-box;
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  color: var(--text);
   font-size: 16px;
 }
-
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url(./images);
+  background-size: cover;
+  background-position: center;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .container {
   display: flex;
   justify-content: center;
