@@ -11,7 +11,11 @@
 
 }
 
-
+@font-face {
+    font-family: 'sora-extra-light';
+    src: url('sora-extralight-webfont.woff')format('woff2'),
+    url('sora-extralight-webfont.woff2')format('woff2');
+}
 
 
 @font-face {
