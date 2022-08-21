@@ -1,13 +1,27 @@
 .header-name {
-  font-family: 'sora-thin';
+  font-family: 'sora-thick';
   font-size: 27.75px;
   padding: 35px;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.hero-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-view {
+  background-color: rgba(122, 22, 123, 0.1);
 }
 
 .nav-bar-full {
   display: flex;
 }
-
+i {
+  width: .2em;
+}
 .nav-bar {
   font-family: 'sora-thin';
   display: flex;
@@ -25,24 +39,45 @@ ul {
 
 .hero-landing {
   display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 }
 
 .my-name {
   font-size: 200px;
   font-family: 'sora-extra-light';
   width: 60vh;
-  padding-left: 20vh;
 }
 
 .my-icon {
   z-index: -1;
-  padding: 40vh;
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.95));
-  border: 1px solid #000000;
-  background: url(images/portfolio-image.jpg) no-repeat;
-  object-fit: contain;
+  background: url(images/Rectangle\ 2-2.png) no-repeat ;
+  background-size: contain;
   width: 50vh;
+}
+
+@media (max-width: 800px) {
+  .hero-landing {
+    flex-direction: column;
+  }
+}
+
+.hero-landing-left {
+  flex: 50%;
+}
+
+.hero-landing-right {
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .hero-landing-right, .hero-landing-left {
+    flex: 100%;
+  }
 }
 
 @font-face {
@@ -69,7 +104,7 @@ ul {
 
 h1 {
   font-size: 150px;
-  font-weight: lighter;
+  font-weight: 100;
   margin: 0%;
   padding: 0%;
 }
@@ -87,7 +122,7 @@ h3 {
   font-size: 20px;
   font-weight: lighter;
   font-style: normal;
-  letter-spacing: .4em;
+  letter-spacing: .6em;
 }
 
 /* 
